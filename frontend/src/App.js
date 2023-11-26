@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 async function testButton() {
+/*
   const response = await fetch("/backend/signin", {
     method: "post",
     headers: {
@@ -14,14 +15,20 @@ async function testButton() {
       password: "password1"
     })
   })
+*/
+  const response = await fetch("/backend/login", {
+    method: "get",
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  })
 
   console.log(response);
   const text = await response.text();
   console.log(text);
   //const raw = response.headers.raw()['set-cookie'];
   //console.log(raw);
-  const raw = response.headers
-  console.log(raw);
 
 /*
   fetch("/backend/signin", {
