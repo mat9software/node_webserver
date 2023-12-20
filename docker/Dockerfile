@@ -50,5 +50,6 @@ RUN . $HOME/.nvm/nvm.sh && nvm install $NODE_VERSION
 #RUN git config --global user.email ""
 
 COPY nginx.conf /etc/nginx/sites-available/default
+COPY index.html /var/www/html/index.html
 
 ENTRYPOINT service nginx restart && bash
