@@ -54,12 +54,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/*<img src={logo} className="App-logo" alt="logo" />*/}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Business-Quebec
+        </p>
+{/*Add language switch*/}
+        <p>
+          We make you a website for free!
+          You pay only if you want extra features.
+        </p>
+        <p>
+          On vous fabrique un site web gratuitement!
+          Vous payez seulement pour les fonctionalite avancees.
         </p>
         <button onClick={testButton}>
-          Login!!!!
+          Hey Test Login!!!!
         </button>
       </header>
     </div>
